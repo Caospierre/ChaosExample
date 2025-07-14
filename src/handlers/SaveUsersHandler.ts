@@ -9,7 +9,7 @@ import { SaveUser } from "models/SaveUserSchema";
 import { UserController } from "controller/UserController";
 import CONTAINER from "architecture/Architecture";
 import SYMBOLS from "constants/Symbols";
-import {ITypeGeneric, IUserHttpResponse, trigger} from "repository/ITypes";
+import {ITypeGeneric, trigger} from "repository/ITypes";
 import {SERIALIZER_JSON} from "constants/MethodHttp";
 
 const LAMBDA_HANDLER: Handler<ITypeGeneric, ITypeGeneric> = async (event) => {

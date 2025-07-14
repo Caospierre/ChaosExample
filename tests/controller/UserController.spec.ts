@@ -10,7 +10,6 @@ import CONTAINER from "../../src/architecture/Architecture";
 import SYMBOLS from "../../src/constants/Symbols";
 import { SearchUserRequest } from "../../src/models/SearchUserRequest";
 import { IUserController } from "../../src/repository/IUserController";
-import { UserSchema } from "../../src/models/UserSchema";
 import { SaveUser } from "../../src/models/SaveUserSchema";
 import { IUserHttpResponse } from "../../src/repository/ITypes";
 

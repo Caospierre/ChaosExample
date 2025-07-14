@@ -4,7 +4,7 @@ import { firstValueFrom, mergeMap, of } from "rxjs";
 import middy from "@middy/core";
 import httpErrorHandler from "@middy/http-error-handler";
 import httpResponseSerializer from "@middy/http-response-serializer";
-import {ITypeGeneric, IUserHttpResponse, trigger} from "repository/ITypes";
+import {ITypeGeneric,trigger} from "repository/ITypes";
 import { SearchUserRequest } from "models/SearchUserRequest";
 import CONTAINER from "architecture/Architecture";
 import { UserController } from "controller/UserController";

@@ -4,7 +4,6 @@ import { IUserController } from "repository/IUserController";
 import { HttpRequestAdapter } from "adapter/HttpRequestAdapter";
 import { SearchUserRequest } from "models/SearchUserRequest";
 import SYMBOLS from "constants/Symbols";
-import { UserSchema } from "models/UserSchema";
 import { IUserHttpResponse, trigger } from "repository/ITypes";
 import { SaveUser } from "models/SaveUserSchema";
 
