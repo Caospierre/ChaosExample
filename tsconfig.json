@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "allowJs": true,
+    "pretty": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "target": "esnext",
+    "rootDir": ".",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "types": ["mocha", "node"],
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "diagnostics": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["src/*", "resources/*", "tests/*"]
+    }
+  },
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "node_modules/**/*",
+    ".vscode/**/*",
+    "*.config.js",
+    "**/*.js",
+    "tests/**/*"
+  ]
+}
