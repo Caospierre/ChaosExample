@@ -13,21 +13,12 @@ import {SERIALIZER_JSON} from "constants/MethodHttp";
 import {defaultTo} from "lodash"
 
 const LAMBDA_HANDLER = async (event) => {
-    console.log("Start request", JSON.stringify(event));
 
     return await firstValueFrom(
     trigger.pipe(
       mergeMap(() => of(<SearchUserRequest>defaultTo(event.queryStringParameters,{}))),
-      mergeMap((request: SearchUserRequest) =>
-          {
-              console.log("Received request", JSON.stringify(request));
-              return CONTAINER.get<UserController>(SYMBOLS.UserController).getUser(request)
-          }
-      ),
-      mergeMap((res:IUserHttpResponse)=>{
-            console.log("Response",JSON.stringify(res))
-            return of(res)
-      })
+      mergeMap((request: SearchUserRequest) =>CONTAINER.get<UserController>(SYMBOLS.UserController).getUser(request)
+      )
     ),
 
   );
