@@ -74,6 +74,7 @@ Proyecto backend serverless en AWS utilizando Lambda, API Gateway y Terraform. E
 
 ```
 terraform init
+npm run compile
 terraform apply
 ```
 
